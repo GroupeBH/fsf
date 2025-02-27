@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import logo from '../public/logo.png'
+import Image from 'next/image';
 
 export default function Home() {
   const [countdown, setCountdown] = useState({
@@ -94,10 +96,17 @@ export default function Home() {
           }}
           className="mb-6 md:mb-8"
         >
-          <div className="logo-container w-[140px] h-[140px] md:w-[180px] md:h-[180px]">
-            <div className="logo-placeholder w-[130px] h-[130px] md:w-[170px] md:h-[170px]">
+          <div className="">
+            {/* <div className="logo-placeholder w-[130px] h-[130px] md:w-[170px] md:h-[170px]">
               Fondation<br />Soeurs<br />de Femme
-            </div>
+            </div> */}
+            <Image
+              src={logo?.src}
+              alt="Right Of Life Logo"
+              width={100}
+              height={100}
+              className=""
+            />
           </div>
         </motion.div>
 
@@ -190,7 +199,7 @@ export default function Home() {
 
         <motion.div variants={itemVariants}>
           <h3 className="text-lg md:text-xl font-medium mb-3 md:mb-4 text-primary-blue">Suivez-nous</h3>
-          <div className="flex space-x-6 md:space-x-8 mt-2">
+          <div className="flex space-x-6 md:space-x-8 mt-2 mb-10 md:mb-5">
             {[
               { name: 'Facebook', icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -223,7 +232,7 @@ export default function Home() {
         </motion.div>
       </motion.div>
 
-      <div className="absolute bottom-2 md:bottom-4 text-center text-xs md:text-sm text-gray-600 z-10">
+      <div className="absolute bottom-4 md:bottom-4 text-center text-xs md:text-sm text-gray-600 z-10">
         © {new Date().getFullYear()} Fondation Soeurs de Femme. Tous droits réservés.
       </div>
     </main>
