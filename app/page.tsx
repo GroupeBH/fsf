@@ -102,7 +102,7 @@ export default function Home() {
             </div> */}
             <Image
               src={logo?.src}
-              alt="Right Of Life Logo"
+              alt="fsf logo"
               width={100}
               height={100}
               className=""
