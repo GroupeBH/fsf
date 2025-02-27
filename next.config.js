@@ -1,4 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+// next.config.js
+module.exports = {
+  output: "export", // Generates a static site (optional)
+  distDir: "dist",  // Output directory
+};
