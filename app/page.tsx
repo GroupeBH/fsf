@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import logo from './public/logo.png'
+
 import Image from 'next/image';
 
 export default function Home() {
@@ -101,7 +101,7 @@ export default function Home() {
               Fondation<br />Soeurs<br />de Femme
             </div> */}
             <Image
-              src={logo?.src}
+              src="https://res.cloudinary.com/dblzafklq/image/upload/v1740729362/pb1a18wpkp7n5so6qy83.png"
               alt="fsf logo"
               width={100}
               height={100}
