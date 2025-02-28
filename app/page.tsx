@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import logo from '../public/logo.png'
+import logo from './public/logo.png'
 import Image from 'next/image';
 
 export default function Home() {
@@ -170,7 +170,16 @@ export default function Home() {
                 </svg>
                 <div>
                   <p className="text-sm md:text-base font-medium">Téléphone</p>
-                  <p className="text-sm text-gray-600">+123 456 7890</p>
+                  <p className="text-sm text-gray-600">+243 829 824 946</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-blue mt-1">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <p className="text-sm md:text-base font-medium">Téléphone</p>
+                  <p className="text-sm text-gray-600">+33 7 58 55 94 32</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -180,7 +189,7 @@ export default function Home() {
                 </svg>
                 <div>
                   <p className="text-sm md:text-base font-medium">Email</p>
-                  <p className="text-sm text-gray-600">contact@soeursdefemme.org</p>
+                  <p className="text-sm text-gray-600">contact@fsf.cd</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -190,7 +199,9 @@ export default function Home() {
                 </svg>
                 <div>
                   <p className="text-sm md:text-base font-medium">Adresse</p>
-                  <p className="text-sm text-gray-600">123 Rue de l'Espoir, 75000 Paris, France</p>
+                  <p className="text-sm text-gray-600">
+                    Avenue Kimpoko numéro 18 Quartier Masiala
+                  </p>
                 </div>
               </div>
             </div>
